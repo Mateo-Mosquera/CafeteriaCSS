@@ -1,0 +1,100 @@
+/*SELECTOR UNIVERSAL*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*SELECTOR DE TIPO*/
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  padding-top: 80px;
+  text-align: justify;
+}
+
+/*SELECTOR DE CLASE*/
+.nav-bar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #e9e8a5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+  z-index: 1000;
+}
+
+/*SELECTOR POR ID*/
+#titulo-principal{
+  margin-bottom: 40px;
+  color: #000000;
+  text-align: center;
+  }
+
+  .logo{
+    color: #000000;
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+
+  .nav-bar > a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+  }
+
+  .nav-bar > a:hover{
+    color: #720000;
+  }
+
+  .contenedor-principal{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .Targeta{
+    background-color: #e6abab;
+    padding: 30px;
+    width: 400px;
+    border-radius: 100px;
+    height: 175px;
+    box-shadow: 0 4px 20px #ff0000;
+  }
+
+  .Targeta:hover{
+    transform: traslateY(-10px);
+    box-shadow:0 4px 20px #1F150C
+  }
+
+  .Targeta h2{
+    margin-bottom: 15px;
+    color: #000000;
+    text-align: center;
+  }
+
+  .Targeta p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+
+  .boton-targeta{
+    padding: 5px 10px;
+    border: none;
+    background-color: #8C5A3C;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .boton-targeta:hover{
+    background-color: aliceblue;
+  }
+
+
