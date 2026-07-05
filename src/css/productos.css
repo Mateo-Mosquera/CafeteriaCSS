@@ -1,0 +1,151 @@
+/* Estilos Base Generales */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 50px;
+    font-family: Arial, sans-serif;
+}
+
+.titulo {
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.nav-barra {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.nav-barra a {
+    text-decoration: none;
+    color: #757575;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+.contenedor-medium {
+    display: grid;
+    /* La primera columna es el doble de ancha para que entren texto + imagen de ciclistas */
+    grid-template-columns: 2fr 1fr 1fr; 
+    gap: 40px 30px; /* 40px de espacio vertical, 30px horizontal */
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start; /* Evita que los elementos se estiren verticalmente de forma rara */
+}
+
+/* Cajas contenedoras transparentes */
+.caja {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    transition: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- SOLUCIÓN 1: Ciclistas a la derecha del texto --- */
+.destacado-principal {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: row; /* Pone texto e imagen lado a lado */
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.texto-destacado {
+    flex: 1; /* Toma la mitad del espacio */
+}
+
+.img-ciclismo {
+    width: 50%; /* Ajusta el tamaño de la imagen */
+    height: 290px; /* Ajusta la altura de la imagen */
+    object-fit: cover;
+}
+
+/* --- SOLUCIÓN 2: Quitar espacio muerto entre fila 1 y 2 --- */
+/* Al usar 'align-items: start' en el contenedor Grid, cada celda ocupa solo lo que necesita, 
+eliminando el hueco gigante debajo de los ciclistas. */
+
+.bloque-morning {
+    grid-column: 1 / 2;
+}
+
+/* --- SOLUCIÓN 3: El texto de "The Crying Chronicles" debajo del Comic --- */
+.mini-item-vertical {
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para bajar el texto */
+    gap: 12px;
+}
+
+.img-comic {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* --- SOLUCIÓN 4: Línea negra arriba de Homeschooling --- */
+.enlaces-centro {
+    border-top: 1px solid #000000; /* Crea la línea negra superior exacta del diseño */
+    padding-top: 15px;
+}
+
+/* Ajustes de imágenes de las columnas medias y bajas */
+.img-horizontal {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+/* Tipografías internas */
+.etiqueta {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #292929;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin: 8px 0;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin-bottom: 5px;
+}
+
+.autor {
+    font-size: 0.8rem;
+    color: #757575;
+    margin-top: 5px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    margin: 15px 0;
+}
+
+.ver-mas {
+    color: #1a8917;
+    font-size: 0.85rem;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: 600;
+}

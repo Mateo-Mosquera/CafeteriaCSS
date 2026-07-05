@@ -1,0 +1,37 @@
+
+.titulo-unico{
+    color: blue;
+    text-align: center;
+}
+
+.contenedor-servicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.caja{
+    color: #ffffff;
+    background-color: #a1754f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px #000000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.caja1{
+    grid-area: 1/1/2/4;
+}
+
+.caja2{
+    grid-area: 2/1/4/3;
+}
+
+.caja3{
+    grid-area: 2/3/6/4;
+}
