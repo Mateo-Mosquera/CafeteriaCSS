@@ -1,4 +1,3 @@
-/* Estilos Base Generales */
 body {
     background-color: #ffffff;
     color: #000000;
@@ -33,18 +32,15 @@ body {
     letter-spacing: 0.5px;
 }
 
-
 .contenedor-medium {
     display: grid;
-    /* La primera columna es el doble de ancha para que entren texto + imagen de ciclistas */
     grid-template-columns: 2fr 1fr 1fr; 
-    gap: 40px 30px; /* 40px de espacio vertical, 30px horizontal */
+    gap: 40px 30px; 
     max-width: 1200px;
     margin: 0 auto;
-    align-items: start; /* Evita que los elementos se estiren verticalmente de forma rara */
+    align-items: start;
 }
 
-/* Cajas contenedoras transparentes */
 .caja {
     background-color: transparent;
     border-radius: 0;
@@ -54,37 +50,31 @@ body {
     flex-direction: column;
 }
 
-/* --- SOLUCIÓN 1: Ciclistas a la derecha del texto --- */
 .destacado-principal {
     grid-column: 1 / 2;
     display: flex;
-    flex-direction: row; /* Pone texto e imagen lado a lado */
+    flex-direction: row; 
     gap: 20px;
     align-items: flex-start;
 }
 
 .texto-destacado {
-    flex: 1; /* Toma la mitad del espacio */
+    flex: 1; 
 }
 
 .img-ciclismo {
-    width: 50%; /* Ajusta el tamaño de la imagen */
-    height: 290px; /* Ajusta la altura de la imagen */
+    width: 50%; 
+    height: 290px; 
     object-fit: cover;
 }
-
-/* --- SOLUCIÓN 2: Quitar espacio muerto entre fila 1 y 2 --- */
-/* Al usar 'align-items: start' en el contenedor Grid, cada celda ocupa solo lo que necesita, 
-eliminando el hueco gigante debajo de los ciclistas. */
 
 .bloque-morning {
     grid-column: 1 / 2;
 }
 
-/* --- SOLUCIÓN 3: El texto de "The Crying Chronicles" debajo del Comic --- */
 .mini-item-vertical {
     display: flex;
-    flex-direction: column; /* Cambiado a columna para bajar el texto */
+    flex-direction: column;
     gap: 12px;
 }
 
@@ -94,13 +84,11 @@ eliminando el hueco gigante debajo de los ciclistas. */
     object-fit: cover;
 }
 
-/* --- SOLUCIÓN 4: Línea negra arriba de Homeschooling --- */
 .enlaces-centro {
-    border-top: 1px solid #000000; /* Crea la línea negra superior exacta del diseño */
+    border-top: 1px solid #000000;
     padding-top: 15px;
 }
 
-/* Ajustes de imágenes de las columnas medias y bajas */
 .img-horizontal {
     width: 100%;
     height: 180px;
@@ -108,7 +96,6 @@ eliminando el hueco gigante debajo de los ciclistas. */
     margin-bottom: 12px;
 }
 
-/* Tipografías internas */
 .etiqueta {
     font-size: 0.75rem;
     font-weight: bold;
